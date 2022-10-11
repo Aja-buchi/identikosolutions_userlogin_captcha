@@ -13,8 +13,8 @@ import ChangePassword from './pages/ChangePassword/changepassword.jsx'
 function App() {
   return (
     <>
-      <Navbar />
       <HashRouter>
+       <Navbar />
         <Routes>
           <Route path="/" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
