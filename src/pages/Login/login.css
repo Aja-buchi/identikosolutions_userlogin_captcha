@@ -1,0 +1,45 @@
+.neat{
+     display: flex;
+    justify-content: space-around;
+    height: 80vh;
+    align-items: center;
+}
+
+
+.loginImg{
+    margin-left: -5rem;
+    border-radius: 10px;
+}
+
+.login--section--2{
+ margin-right: 10rem;
+}
+
+.form-list{
+    display: flex;
+    flex-direction: column; 
+    
+}
+
+.email, .psw, .forgot-password{
+    height: 2.5rem;
+    border-radius: .5rem;
+    
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 300px;
+}
+
+.login{
+    margin-top: 2rem;
+}
+
+.login-btn{
+    margin-top: .1rem;
+    padding: .5rem ;
+    width: 300px;
+    background-color: rgb(0, 85, 255);
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: .5rem;
+}

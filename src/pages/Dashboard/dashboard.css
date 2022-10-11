@@ -1,0 +1,15 @@
+.dashboard-img{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    width: 100vw;
+   
+}
+
+.smiley{
+     /* border-radius: 3rem; */
+     object-fit: cover;
+     width: 100vw;
+    height: 90vh;
+    
+}
