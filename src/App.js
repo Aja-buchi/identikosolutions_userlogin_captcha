@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Login from './pages/Login/login.jsx';
 import Signup from './pages/Signup/signup.jsx';
@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path="/" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
@@ -24,7 +24,7 @@ function App() {
           <Route path="/reset-password" element={<ResetPassword /> } />
           <Route path="/change-password" element={<ChangePassword />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </>
   );
 }
