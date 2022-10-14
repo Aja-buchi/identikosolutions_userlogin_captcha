@@ -6,6 +6,9 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 import { useNavigate } from "react-router-dom";
 
+const userEmail = JSON.parse(localStorage.getItem("email"));
+const userPwd = JSON.parse(localStorage.getItem("password"));
+
 export default function Login() {
     const navigate = useNavigate()
     const formik = useFormik({
@@ -19,7 +22,12 @@ export default function Login() {
         email: Yup.string().email("Invalid email address").required("Required"),
         password: Yup.string().required("This field is required"),
       }),
+
+      
       onSubmit: () => {
+        
+        if(userEmail === formik.values.email && userPwd === formik.values.password)
+       
         navigate("/dashboard");
       },
     });

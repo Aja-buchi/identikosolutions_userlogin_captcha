@@ -16,7 +16,7 @@ function Navbar() {
             <Link to="/change-password">Change Password</Link>
           </div>
           <div className="dropdown--content">
-            <Link to="/">Logout</Link>
+            {/* <Link to="/">Logout</Link> */}
           </div>
         </div>
       </div>

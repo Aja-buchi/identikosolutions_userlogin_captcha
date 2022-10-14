@@ -53,6 +53,14 @@ export default function Signup() {
       ),
     }),
     onSubmit: () => {
+      localStorage.setItem('firstname', JSON.stringify(formik.values.firstname));
+      localStorage.setItem("lastname", JSON.stringify(formik.values.lastname));
+      localStorage.setItem('email', JSON.stringify(formik.values.email));
+      localStorage.setItem('phonenumber', JSON.stringify(formik.values.phonenumber));
+      localStorage.setItem("password", JSON.stringify(formik.values.password));
+      localStorage.setItem("confirmPassword", JSON.stringify(formik.values.confirmpassword)
+      );
+
       navigate("/emailverification");
     },
   });
@@ -219,3 +227,5 @@ export default function Signup() {
     </div>
   );
 }
+
+

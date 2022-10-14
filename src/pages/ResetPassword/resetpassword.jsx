@@ -60,8 +60,7 @@ function ResetPassword() {
               <div style={{ color: "red" }}>{formik.errors.retypePassword}</div>
             ) : null}
           </div>
-          {/* <Button text="Submit" onClick={() => {navigate("/login");}}
-        /> */}
+    
           <button type="submit" className="signup-btn">
             Submit
           </button>
